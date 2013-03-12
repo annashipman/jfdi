@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Anna Shipman. JFDI.</title>
-<link rel="stylesheet" type="text/css" href="style.css" /> 
+<link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
 <script type="text/javascript" src="navigation.js"></script>
 </head>
@@ -13,27 +13,27 @@
 </div>
 
 <div class="colmask threecol">
-	<div class="colmid">
-		<div class="colleft">
-			<div class="col1">
-				<!-- Column 1 start -->
-				
+    <div class="colmid">
+        <div class="colleft">
+            <div class="col1">
+                <!-- Column 1 start -->
+
 <div id="estimating" class="blog-post">
-    <h1 class="header blog-header">How to Estimate</h1>
+    <h1 class="blog-header">How to Estimate</h1>
 <em>21st January 2013</em>
 <p>I want to share this great idea about estimating that came from the excellent <a href="https://twitter.com/mnowster" target="_blank">Mazz Mosley</a>. Instead of worrying about estimating in hours or days, estimate in story points as follows:</p>
 <div class="pretty-code-sample">
 <p>1: This is trivial. I know exactly the code I would write if I went back to my desk right now.</p>
-<p>2: This is quite easy. I know roughly what I'd have to do. I might have to look one or two things up.</p>    
+<p>2: This is quite easy. I know roughly what I'd have to do. I might have to look one or two things up.</p>
 <p>3: This is a bit complex. I might have to refresh my memory on a few things and there are a couple of unknowns.</p>
 <p>5: This is big. I have only a rough idea of how I'd do this.</p>
 <p>8+: I don't know how to do this.</p>
 </div>
 <p>I've written 8+ rather than the more standard 8, 13, 21 etc because in our team we had an additional rule - if it's 8+ then the story is too big and you need to break it down a bit more. Maybe have a timeboxed spike? Then you will have more information for the next planning meeting.</p>
 <p>It doesn't matter how much time each point ends up being (and this will vary from team to team); after a few sprints of estimating like this the velocity will become meaningful and you can use it for predicting how much work you'll get through in future sprints.</p>
-</div> 
+</div>
 <div id="learning-perl" class="blog-post">
-    <h1 class="header blog-header">Learning the perls</h1>
+    <h1 class="blog-header">Learning the perls</h1>
 <em>20th November 2012</em>
 <p>After some time muddling through with Perl, I have accepted the inevitable - it's time to actually knuckle down and learn it properly. I have acquired <a href="http://www.amazon.co.uk/Learning-Perl-Randal-L-Schwartz/dp/1449303587/" target="_blank">some</a> <a href="http://www.amazon.co.uk/Modern-Perl-chromatic/dp/0977920178/" target="_blank">books</a>, but I also require some direction - so I asked my excellent colleague and friend <a href="https://twitter.com/cackhanded" target="_blank">Mark Norman Francis</a> to write a brief guest post for my blog.</p>
 <p>His instructions were "Complete the sentence: In order to understand C you need to understand Pointer Arithmetic. In order to understand Perl you need to understand...". He went many better, and produced the following:</p>
@@ -53,15 +53,15 @@
 <li>Find an abstract intro to OO example (such as employee payroll) and write it in Moose with full unit test coverage.</li>
 <li>Lastly, read the `perlstyle` documentation, and then write your own style guide.</ol></div>
 <p>Thanks, Norm. Thorm.</p>
-</div> 
+</div>
 <div id="d3" class="blog-post">
-    <h1 class="header blog-header">Learning More About D3</h1>
+    <h1 class="blog-header">Learning More About D3</h1>
 <em>19th July 2012</em>
 <p>I had a really inspiring chat with <a href="https://twitter.com/mattb" target="_blank">Matt Biddulph</a> about D3 this week. He showed me some really cool things. I made some notes.</p>
 <img src="img/D3.jpg" />
-</div> 
+</div>
 <div id="cap-or-pacelc" class="blog-post">
-    <h1 class="header blog-header">CAP again - or should that be PACELC?</h1>
+    <h1 class="blog-header">CAP again - or should that be PACELC?</h1>
 <em>15th July 2012</em>
 <p>The last thing I wrote about was the CAP Theorem. Last week, <a href="https://twitter.com/thattommyhall" target="_blank">Tom Hall<a> visited our office and gave a very interesting talk, the central thesis of which was that the CAP Theorem, as often explained, is incorrect - or at least not very meaningful.</p>
 <p>The first point, explained very clearly in <a href="http://www.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank">CAP Confusion: Problems with 'partition tolerance'</a> is that P, "Partition Tolerance", as per the <a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf"target="_blank">proof</a> of the CAP Theorem, is not a property of your application; rather it is a property of the network it's on. The network may partition. To quote from Henry Robinson's Cloudera article:</p>
@@ -80,7 +80,7 @@
 </div>
 
 <div id="cap-theorem-and-mongodb" class="blog-post">
-    <h1 class="header blog-header">The CAP Theorem and MongoDB</h1>
+    <h1 class="blog-header">The CAP Theorem and MongoDB</h1>
 <em>29th April 2012</em>
 <p>This week I learned some things about MongoDB. One of them was about how it fits in with the CAP theorem.</p>
 <p>They say a picture is worth a thousand words, and I think this diagram from my excellent new colleague <a href="https://twitter.com/matwall" target="_blank">Mat Wall</a> while he was explaining it to me says everything:</p>
@@ -111,11 +111,11 @@
 <p>However, you can also configure MongoDB to be flexible about durability. This is where, if you run the two lines of code on the <em>same</em> node, it might be the case that line 2 hasn't run, and possibly even never will. You might do this, for example if you were storing analytics. If you are looking for general trends, it might not matter so much if 1% of the transactions fail, so you might configure it to be flexible on durability. Of course you wouldn't do that for something as crucial as characteristics about Anna.</p>
 </div>
                 <div id="questions-for-data" class="blog-post">
-<h1 class="header blog-header">What Should Your Work Log Tell You?</h1>
+<h1 class="blog-header">What Should Your Work Log Tell You?</h1>
 <em>15th April 2012</em>
 <p>We've got some great data for the <a href="http://www.spaconference.org/spa2012/" target="_blank">SPA2012</a> workshop on JavaScript visualisations. <a href="https://twitter.com/hibri" target="_blank">Hibri</a> has managed to obtained three years' worth of <a href="http://www.7digital.com/" target="_blank">7Digital</a>'s work-tracking data and <a href="https://twitter.com/robbowley" target="_blank">Rob</a> has very kindly allowed us to use it (anonymised, of course).</p>
 
-<p>We're going to use this dataset to show different information using different libraries for the visualisations.</p> 
+<p>We're going to use this dataset to show different information using different libraries for the visualisations.</p>
 
 <p>What I'd really like your input on is, what would you like to know? If this was your work-tracking data, what questions would you want it to answer?</p>
 
@@ -128,23 +128,23 @@
 <p>Here is an example:</p>
 
 <p class="code-sample">
-		"Feature ID": "A-321",</br>
-		"Application Name": "Project A",</br>
-		"Type": "Bug",</br>
-		"T-Shirt Size": "S",</br>
-		"Added": "15/03/2011 12:12",</br>
-		"Prioritised, Awaiting Analysis": "15/03/2011 12:12",</br>
-		"Analysis Completed": "15/03/2011 12:12",</br>
-		"Development Started": "15/03/2011 13:21",</br>
-		"Systest Ready": "15/03/2011 16:21",</br>
-		"Systest OK": "17/03/2011 10:34",</br>
-		"In UAT": "17/03/2011 10:34",</br>
-		"Ready For Release": "17/03/2011 10:34",</br>
-		"In Production": "17/03/2011 10:35",</br>
-		"Done": "22/03/2011 10:48",</br>
-		"Lead Time": "2",</br>
-		"Cycle Time": "2",</br>
-		"Development Cycle Time": "2"
+        "Feature ID": "A-321",</br>
+        "Application Name": "Project A",</br>
+        "Type": "Bug",</br>
+        "T-Shirt Size": "S",</br>
+        "Added": "15/03/2011 12:12",</br>
+        "Prioritised, Awaiting Analysis": "15/03/2011 12:12",</br>
+        "Analysis Completed": "15/03/2011 12:12",</br>
+        "Development Started": "15/03/2011 13:21",</br>
+        "Systest Ready": "15/03/2011 16:21",</br>
+        "Systest OK": "17/03/2011 10:34",</br>
+        "In UAT": "17/03/2011 10:34",</br>
+        "Ready For Release": "17/03/2011 10:34",</br>
+        "In Production": "17/03/2011 10:35",</br>
+        "Done": "22/03/2011 10:48",</br>
+        "Lead Time": "2",</br>
+        "Cycle Time": "2",</br>
+        "Development Cycle Time": "2"
 </p>
 
 <p>So this is a really rich dataset. We have all the dates that various stages of the release process happened, as well as some information about what application it was for, what type of work it was (e.g. Bug, Feature, Build Maintenance), what the rough estimate was (T-shirt size), and how long the whole process took, both from first raised to done (lead time) and from dev start to done (development cycle time). The log goes back to 2009.</p>
@@ -164,7 +164,7 @@
 </div>
 
 <div id="personal-development-1" class="blog-post">
-<h1 class="header blog-header">P.O.A.</h1>
+<h1 class="blog-header">P.O.A.</h1>
  <em>20th February 2012</em>
 <p>My goal is to be a better developer.</p>
 <p>A few weeks ago, I had an appraisal. There was a lot of positive feedback and also some really useful suggested areas for development. With the help of my good friend and unofficial mentor <a href="http://www.twitter.com/dolsonagile" target="_blank">Dolan O'Toole</a>, I pulled together some practical suggestions as to how I could improve them:</p>
@@ -175,8 +175,8 @@
 </div>
 
 
-				<div id="gamejam-knowledge" class="blog-post">
-<h1 class="header blog-header">Would Have Been Useful to Know at My First Game Jam</h1>
+                <div id="gamejam-knowledge" class="blog-post">
+<h1 class="blog-header">Would Have Been Useful to Know at My First Game Jam</h1>
  <em>14th February 2012</em>
 <p>I had no idea what to expect at my first <a href="http://globalgamejam.org/" target="_blank">game jam</a>, and I was nervous about whether I'd be able to participate. I'm a programmer, but I'd never written a videogame, and I don't even much play videogames.</p>
 
@@ -194,7 +194,7 @@
 
 <h3>A Note on Writing Your Own Game Engine</h3>
 
-<p>I didn't understand at the time why my <a href="http://globalgamejam.org/2011/flocks-sake" target="_blank">second game jam</a> was so much harder than my <a href="http://globalgamejam.org/2010/bacterial-warfare" target="_blank">first</a>, but when I explained what we did to the brilliant <a href="https://twitter.com/joehalliwell" target="_blank">Joe Halliwell</a> afterwards, it all became clear. We disobeyed the advice. We wrote our own game engine.</p> 
+<p>I didn't understand at the time why my <a href="http://globalgamejam.org/2011/flocks-sake" target="_blank">second game jam</a> was so much harder than my <a href="http://globalgamejam.org/2010/bacterial-warfare" target="_blank">first</a>, but when I explained what we did to the brilliant <a href="https://twitter.com/joehalliwell" target="_blank">Joe Halliwell</a> afterwards, it all became clear. We disobeyed the advice. We wrote our own game engine.</p>
 
 <p>To be precise, we used <a href="http://www.opengl.org/about/" target="_blank">OpenGL</a>, which is a 2D/3D Graphics API written in C. It gives the instructions to the graphics card - you definitely don't want to be doing that yourself - at least not in a 48-hour game jam. The code was written in Python, and for the binding we used <a href="http://pyopengl.sourceforge.net/" target="_blank">PyOpenGL</a>. For the physics we used <a href="http://box2d.org/" target="_blank">Box2D</a>. OK, so we didn't exactly write our own game engine from scratch, but we assembled one from various constituent parts.</p>
 
@@ -202,11 +202,11 @@
 
 <h2 id="game-mechanics">Game Mechanics</h2>
 
-<p>Another phrase I heard a lot and pretended to understand was "game mechanics". To be fair, I thought I did understand it - I thought it was jumping, shooting etc. I was wrong.</p> 
+<p>Another phrase I heard a lot and pretended to understand was "game mechanics". To be fair, I thought I did understand it - I thought it was jumping, shooting etc. I was wrong.</p>
 
 <p>Game mechanics are more like constructs of rules. Unlocking an achievement is a game mechanic. Going up a level when you reach a certain number of points is a game mechanic. Dying when you lose 90% of your health bar is a game mechanic. So when someone asks "What are the game mechanics?", they mean something like, what are the gamey things here? What makes this a game, rather than just graphics moving across a screen?</p>
 
-<p>I like <a href="http://gamification.org/wiki/Game_Mechanics" target="_blank">this list</a> of potential game mechanics.</p> 
+<p>I like <a href="http://gamification.org/wiki/Game_Mechanics" target="_blank">this list</a> of potential game mechanics.</p>
 
 <h2 id="art">A Little Bit About Art</h2>
 
@@ -216,9 +216,9 @@
 
 <p>However, it's more than just the technical differences, and the conversations you hear about pixel vs vector art will probably reflect something other than the strict technical distinction. <a href="https://twitter.com/doches" target="_blank">Trevor</a> summed it up for me very clearly, so here is an edited version of what he said:</p>
 
-<p>"To me, pixel art is more of an aesthetic choice than a technical term. It's true that older games had a pixel art aesthetic, especially on 8- or 
+<p>"To me, pixel art is more of an aesthetic choice than a technical term. It's true that older games had a pixel art aesthetic, especially on 8- or
 16-bit platforms. Today, though, I think people use the terms 'pixel art' and 'retro' more or less interchangeably - games like <a href="http://www.canabalt.com" target="_blank">Canabalt</a> or <a href="http://shauninman.com/lastrocket/" target="_blank">The Last Rocket</a> are undeniably retro, and use the pixel art style to great effect. Games like <a href="http://chrome.angrybirds.com/" target="_blank">Angry Birds</a> are rendered using the same technology (2d sprites), yet no one would ever say that Angry Birds qualified as pixel art.</p>
-<p>"As for vector art, true vector images (e.g. svg) are rarely used outwith UI design and Flash."</p> 
+<p>"As for vector art, true vector images (e.g. svg) are rarely used outwith UI design and Flash."</p>
 
 <h2>Next steps</h2>
 
@@ -228,7 +228,7 @@
 </div>
 
 <div id="jstalk-structure" class="blog-post">
-<h1 class="header blog-header">JavaScript Talk Takes Shape</h1>
+<h1 class="blog-header">JavaScript Talk Takes Shape</h1>
  <em>21st January 2012</em>
 <p>Just over a week to go until the final deadline for the SPA submissions, and the JavaScript visualisations talk is shaping up.</p>
 <p>The plan is to demonstrate the use of a JS library to produce a certain kind of visualisation, followed by a 15-20 minute exercise where participants use the library to create a similar visualisation. I've said "rinse and repeat 4-5 times", though I'm slightly dubious as to whether we're going to have time to do more than three. <a href="https://twitter.com/hibri">Hibri</a> and I are going to do one each and demo to the other, so we'll have a better idea then of how many we can cover. I'm really excited about what we're going to produce!</p>
@@ -246,7 +246,7 @@
 </div>
 
 <div id="chat-with-ian" class="blog-post">
-<h1 class="header blog-header">Preparation Begins for the JavaScript Talk...</h1>
+<h1 class="blog-header">Preparation Begins for the JavaScript Talk...</h1>
  <em>18th December 2011</em>
 <p>As part of preparing the proposal for the JavaScript visualisations talk, I had a coffee with <a href="https://twitter.com/ian_alderson" target="_blank">Ian Alderson</a>. He did an excellent talk at SPA2011, along with Adam Iley, on HTML5. The presentation is still available online (using HTML5 for the slides!) <a href="http://webappsthatshine.com/presentation/" target="_blank">here</a>, I really recommend you check it out.</p>
 <p>Although Ian doesn't have time to co-pilot on the talk, he very generously gave up his time to give me some advice. Notes below. The first suggestion of his that I plan to follow is a comparison between SVG and Canvas - as he pointed out, all JS visualisation libraries will be based on one or the other, so that will definitely be a factor in what library to choose. It's not the case that one is just better than the other - both have strengths and weaknesses. Watch this space for more on this topic...</p>
@@ -254,9 +254,9 @@
 </div>
 
 <div id="js-talk" class="blog-post">
-<h1 class="header blog-header">JavaScript Visualisations Proposal</h1>
+<h1 class="blog-header">JavaScript Visualisations Proposal</h1>
  <em>30th November 2011</em>
-<p>I have proposed a talk for SPA2012 on JavaScript visualisations.</p> 
+<p>I have proposed a talk for SPA2012 on JavaScript visualisations.</p>
 <p>The basic outline of the proposal is a workshop where we will demonstrate the use of different JS libraries to visualise different kinds of data with several 15-20 minute exercises where participants use the library to create a similar visualisation. Ideally participants would leave with an overview of how and when to use the libraries and tools we've covered, and ideally an idea of what factors to think about when choosing a JS data visualisation tool.</p>
 <p>Still in the very early stages of planning it, but I am in the process of moving this site over to a host that will support WordPress, at which point I will be able to invite comments/suggestions. In the meantime, any suggestions are very welcome, by email or <a href="http://www.twitter.com/annashipman" target="_blank">twitter</a>.</p>
 <p>Notes from the first planning meeting, with <a href="http://www.hibri.net/" target="_blank">Hibri</a>:</p>
@@ -264,14 +264,14 @@
 </div>
 
 <div id="continuing-struggles" class="blog-post">
-<h1 class="header blog-header">My Continuing Struggles with Linux</h1>
+<h1 class="blog-header">My Continuing Struggles with Linux</h1>
  <em>17th October 2011</em>
 <p>Summarised excellently by this cartoon. It's great fun, but...</p>
 <p><a href="http://xkcd.com/196/" target="_blank"><img src="img/command_line_fu.png" /></a></p>
 </div>
 
 <div id="sorl-bites-me" class="blog-post">
-<h1 class="header blog-header">Sorl-thumbnail Comes Back to Bite Me</h1>
+<h1 class="blog-header">Sorl-thumbnail Comes Back to Bite Me</h1>
 <em>12th September 2011</em>
 <p>Well, the <a href="#no-sorl-thumbnail">lack of sorl-thumbnail</a> came back to bite me when I got the latest version of the Django project I've been working on. Previous releases had lulled me into a false sense of security, but then the latest update, a bit too late in the evening, I had that old error:</p>
 
@@ -283,16 +283,16 @@
 <p>Kind of begs the question as to why I didn't do that in the first place for all the packages... but never mind. Onwards and upwards!</p>
 </div>
 <div id="evaluation-of-css" class="blog-post">
-<h1 class="header blog-header">How to Write Efficient CSS - Evaluation of CSS</h1>
+<h1 class="blog-header">How to Write Efficient CSS - Evaluation of CSS</h1>
 <em>29th August 2011</em>
 <p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues - a senior developer with a lot of experience - said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here.</p>
 <p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
 <ol>
-  <li><a href="#css">CSS</a></li> 
-  <li><a href="#selectors">Selectors</a></li> 
-  <li><a href="#the-cascade">The Cascade</a></li> 
-  <li><a href="#inheritance">Inheritance</a></li> 
-</ol> 
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
 and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
 <h2>How CSS is Evaluated</h2>
 <p>The key information is these two points:
@@ -308,7 +308,7 @@ and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how
 <li>Tag Rules - for example <span class="pretty-code-sample">treeitem > treerow { ... } </span></li>
 <li>Universal Rules - all other rules</li>
 </ol>
-<p>The CSS engine then takes each html element in the document in turn. If it has an ID, then the engine searches through the style rules and checks rules that match that element's ID. If it has a class, only Class Rules for a class found on the element will be checked. Only Tag Rules that match the tag will be checked. 
+<p>The CSS engine then takes each html element in the document in turn. If it has an ID, then the engine searches through the style rules and checks rules that match that element's ID. If it has a class, only Class Rules for a class found on the element will be checked. Only Tag Rules that match the tag will be checked.
 Universal Rules will always be checked.</p>
 <h3>2. The engine evaluates each rule from right to left...</h3>
 <p>So in the example <span class="pretty-code-sample">button#backButton { ... }</span> the key is the id "backButton". In the example I give in <a href="#basic-css">Basic CSS</a> the key is the class "blog-post".</p>
@@ -338,16 +338,16 @@ Universal Rules will always be checked.</p>
 </div>
 
 <div id="basic-css" class="blog-post">
-<h1 class="header blog-header">How to Write Efficient CSS - Basic CSS</h1>
+<h1 class="blog-header">How to Write Efficient CSS - Basic CSS</h1>
 <em>6th August 2011</em>
 <p>I recently did a knowledge share at work on how to write efficient CSS, and one of my colleagues - a senior developer with a lot of experience - said "I felt the penny drop". High praise indeed, so I thought it was worth reproducing it here, even though other similar divs are available on the internet.</p>
 <p>The write-up is pretty long, so I've divided the divs into <a href="#basic-css">Basic CSS</a> in which I cover:
 <ol>
-  <li><a href="#css">CSS</a></li> 
-  <li><a href="#selectors">Selectors</a></li> 
-  <li><a href="#the-cascade">The Cascade</a></li> 
-  <li><a href="#inheritance">Inheritance</a></li> 
-</ol> 
+  <li><a href="#css">CSS</a></li>
+  <li><a href="#selectors">Selectors</a></li>
+  <li><a href="#the-cascade">The Cascade</a></li>
+  <li><a href="#inheritance">Inheritance</a></li>
+</ol>
 and <a href="#evaluation-of-css">Evaluation of CSS</a></li> in which I cover how CSS is evaluated and some things we can do to make it more efficient.</p>
 <h2 id="css">CSS</h2>
 <p>For those who have no idea at all what CSS is, I can recommend nothing better than the <a href="http://www.w3schools.com/css/css_intro.asp">w3schools excellent intro</a>. The w3school is always my first port of call for definitive answers on html, CSS and JavaScript. I will assume that you at least know that CSS stands for Cascading Style Sheets, and realise why separating that from html can make development easier.</p>
@@ -399,7 +399,7 @@ For example, <span class="pretty-code-example">p { color: red; }</span> would ma
 <h3>#id</h3>
 Giving the ID makes the one specific element behave in a certain way. It is certainly the most efficient selector (see <a href="#evaluation-of-css">how it's evaluated</a>, but it isalso slightly pointless. The point of style is to make a website look and feel consistent - with your brand, with itself, etc. IDs are (supposed to be) unique on a page. So why would you want to style just one thing?
 <h3>.class</h3>
-The most common selector and the one I think we should all be using most of the time. 
+The most common selector and the one I think we should all be using most of the time.
 <h3>*</h3>
 The universal selector. Some interesting discussion <a href="http://meyerweb.com/eric/divs/webrev/200006a.html" target="_blank">here</a>, but in summary it is the least efficient selector and also allows you to bypass inheritance. I say AVOID.
 <h3>Combinations</h3>
@@ -470,7 +470,7 @@ The universal selector. Some interesting discussion <a href="http://meyerweb.com
 </div>
 
 <div id="firefox-part-2" class="blog-post">
-<h1 class="header blog-header">A Voyage of Discovery - Upgrading Firefox Part 2</h1>
+<h1 class="blog-header">A Voyage of Discovery - Upgrading Firefox Part 2</h1>
 <em>27th July 2011</em>
 <p>Right, it turned out my next step was not a chat with Joe Halliwell but instead with my good friend and mentor, <a href="http://dolsonagile.wordpress.com/">Dolan O'Toole</a>, and what I thought might be a voyage of discovery into how to make my installation of firefox run like a normal program turned out to be just a short trip of discovery to finding out that I hadn't actually been looking in the right places.</p>
 
@@ -485,7 +485,7 @@ The universal selector. Some interesting discussion <a href="http://meyerweb.com
 
 
 <div id="firefox-part-1" class="blog-post">
-<h1 class="header blog-header">Upgrading Firefox - part 1...</h1>
+<h1 class="blog-header">Upgrading Firefox - part 1...</h1>
 <em>20th July 2011</em>
 <p>So. Not content with the Ubuntu version of Firefox which is at 3.6.18, I decided that I wanted Firefox 5.0. Heck, I want 5.0.1.</p>
 
@@ -499,7 +499,7 @@ The universal selector. Some interesting discussion <a href="http://meyerweb.com
 
 <p>First of all, when it said "Run the following shell script" I just typed it into the console window. That did not work. Don't sigh, I'm new to this!</p>
 
-<p>So I created the shell script and saved it. Following, incidentally, instructions <a href="http://www.go2linux.org/starting-with-shell-script" target="_blank">here</a> - the bit I was missing was the permissions: <span class="code-sample">chmod +x myfirstscript.sh</span> 
+<p>So I created the shell script and saved it. Following, incidentally, instructions <a href="http://www.go2linux.org/starting-with-shell-script" target="_blank">here</a> - the bit I was missing was the permissions: <span class="code-sample">chmod +x myfirstscript.sh</span>
 
 <p>[NB. I couldn't agree more with the grateful commenter on that link: "Everybody just writes "run the shell script" but a complete beginner doesn't know, that shell scripts have to be executable and are started with ./"]</p>
 
@@ -522,11 +522,11 @@ The universal selector. Some interesting discussion <a href="http://meyerweb.com
 (firefox-bin:1923): Gtk-WARNING **: /usr/lib/gtk-2.0/2.10.0/immodules/im-ibus.so: wrong ELF class: ELFCLASS64
 </p>
 
-<p>Ideally I want this firefox to run normally, i.e. be available on the menu, have an icon in the top panel, not to rely on a command window. I suspect my next port of call is to discuss this with Mr Joseph Halliwell. I hope there will be a part 2 where I turn out to have learned loads about this area!</p> 
+<p>Ideally I want this firefox to run normally, i.e. be available on the menu, have an icon in the top panel, not to rely on a command window. I suspect my next port of call is to discuss this with Mr Joseph Halliwell. I hope there will be a part 2 where I turn out to have learned loads about this area!</p>
 </div>
 
 <div id="learned-today" class="blog-post">
-<h1 class="header blog-header">What I have learned about folder structure today</h1>
+<h1 class="blog-header">What I have learned about folder structure today</h1>
 
 <em>22nd April 2011</em>
 
@@ -571,12 +571,12 @@ _mysql_exceptions.OperationalError: (1045, "Access denied for user 'anna'@'local
 </p>
 
 <p>It's progress.</p></div>
-				<!-- Column 1 end -->
-			</div>
-			<div class="col2">
-				<!-- Column 2 start -->
-				<div class="sidebar">
-				<p>Someone told me I should use Linux because it would make me a better developer. Admittedly, he was very drunk when he told me this. But I want to be a better developer, so I'm giving it a go. It is not proving a breeze so far. 
+                <!-- Column 1 end -->
+            </div>
+            <div class="col2">
+                <!-- Column 2 start -->
+                <div class="sidebar">
+                <p>Someone told me I should use Linux because it would make me a better developer. Admittedly, he was very drunk when he told me this. But I want to be a better developer, so I'm giving it a go. It is not proving a breeze so far.
 <p>Some of this blog is my note for myself of what I've done, and some of it is me writing about things I actually know about...</p>
 <a href="#estimating">How to Estimate</a> <em>21st January 2013</em><br>
 <a href="#learning-perl">Learning the perls</a> <em>20th November 2012</em><br>
@@ -597,17 +597,17 @@ _mysql_exceptions.OperationalError: (1045, "Access denied for user 'anna'@'local
 <a href="#firefox-part-1">Upgrading Firefox - part 1...</a> <em>20th July 2011</em><br>
 <a href="#learned-today">What I have learned about folder structure today</a> <em>22nd April 2011</em><br>
 </div>
-				<!-- Column 2 end -->
-			</div>
-			<div class="col3">
-				<!-- Column 3 start -->
-				<!-- Column 3 end -->
-			</div>
-		</div>
-	</div>
+                <!-- Column 2 end -->
+            </div>
+            <div class="col3">
+                <!-- Column 3 start -->
+                <!-- Column 3 end -->
+            </div>
+        </div>
+    </div>
 </div>
 <div id="footer">
-	<p>This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm" target="_blank">Perfect 'Holy Grail' 3 Column Liquid Layout</a> by <a href="http://matthewjamestaylor.com" target="_blank">Matthew James Taylor</a>.</p>
+    <p>This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm" target="_blank">Perfect 'Holy Grail' 3 Column Liquid Layout</a> by <a href="http://matthewjamestaylor.com" target="_blank">Matthew James Taylor</a>.</p>
 </div>
 
 </body>
