@@ -1,0 +1,205 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height:130%;
+}
+
+.header {
+background-color: #6d695c;
+/*Argyle. Author: Anna Kassner via leaverou.me*/
+background-image:
+-webkit-repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px), 
+-webkit-repeating-linear-gradient(30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+-webkit-linear-gradient(30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+-webkit-linear-gradient(-30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+
+background-image:
+ -moz-repeating-linear-gradient(-30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  -moz-repeating-linear-gradient(30deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+  -moz-linear-gradient(30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  -moz-linear-gradient(-30deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+
+background-size: 70px 120px;
+padding-top:10px;
+}
+
+.blog-header{
+	padding-bottom:10px;
+    line-height:100%;
+}
+
+.link {
+    margin-bottom: 50px;
+	padding-bottom: 50px;
+	/*text-shadow: 1px 1px 1px black;*/
+}
+
+.link-group{
+	margin-top:10px;
+	padding-bottom:20px;
+}
+
+.header-text{
+	color: white;
+	font-size: 20px;
+	
+}
+
+.twitter{
+	float:right;
+	padding-top:20px;
+	padding-right: 10px;
+	font-size:0.9em;
+}
+
+.name {
+	padding-left: 10px;
+	font-weight: bold;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-size:40px;
+}
+
+.ie-note{
+	float:right;
+	font-size:0.9em;
+}
+
+.code-sample{
+	border-style: dashed;
+	border-color: black;
+	border-width: 1px;
+	font-family: Courier;
+	font-size: 85%;
+}
+
+.pretty-code-sample{
+	border-style:solid;
+	border-color: black;
+	border-width: 2px;
+	font-weight:bold;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.pretty-code-sample span{
+	padding-left: 20px;	
+}
+
+.left-2-column {
+	float:left;
+	width: 45%;
+}
+
+.right-2-column {
+	float:right;
+	width:50%;
+}
+
+/* lifted directly from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
+/* column container */
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#fff;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#fff;	/* left column background colour */
+}
+.threecol .col1 {
+	width:46%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:20%;			/* Width of left column content (column width minus padding on either side) */
+	left:30%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:21%;			/* Width of right column content (column width minus padding on either side) */
+	left:85%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+/*bastardised from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
+.middle-column, .left-column {
+	float:left;
+	position:relative;
+	width:100%;
+	right: 33%;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-1-and-3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	
+	overflow:hidden;
+	width:29%;
+}
+
+.column-1 {
+	left:102%;
+}
+
+.column-2 {
+	left:37%;	
+}
+.column-3 {
+	left:72%;			
+}
+
+.column-1-and-3 {
+	left:97%;
+}
+
+.blog-post{
+}
+
+.sidebar{
+    font-size:14px;
+    /*text-align:justify;
+	margin-top:21px;
+    padding: 5px;
+	
+	width:30%;
+    background-color: #6d695c;*/
+}
+
+.blogs {
+	width: 68%;
+	padding-right:10px;
+}
+
+}
+
