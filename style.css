@@ -148,7 +148,6 @@ p .pretty-code-sample {
 }
 
 /* lifted directly from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
-/* column container */
 .colmask {
     position:relative;    /* This fixes the IE7 overflow hidden bug */
     clear:both;
@@ -156,7 +155,7 @@ p .pretty-code-sample {
     width:100%;            /* width of whole page */
     overflow:hidden;        /* This chops off any overhanging divs */
 }
-/* common column settings */
+
 .colright,
 .colmid,
 .colleft {
@@ -169,8 +168,7 @@ p .pretty-code-sample {
 .col3 {
     float:left;
     position:relative;
-    padding:0 0 1em 0;    /* no left and right padding on columns, we just make them narrower instead
-                    only padding top and bottom is included here, make it whatever value you need */
+    padding:0 0 1em 0;    /* no left and right padding on columns, we just make them narrower instead */
     overflow:hidden;
 }
 /* 3 Column settings */
@@ -199,39 +197,6 @@ p .pretty-code-sample {
                     (100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
 }
 
-/*bastardised from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
-.middle-column, .left-column {
-    float:left;
-    position:relative;
-    width:100%;
-    right: 33%;
-}
-
-.column-1,
-.column-2,
-.column-3,
-.column-1-and-3 {
-    float:left;
-    position:relative;
-    padding:0 0 1em 0;
-    overflow:hidden;
-    width:29%;
-}
-
-.column-1 {
-    left:102%;
-}
-
-.column-2 {
-    left:37%;
-}
-.column-3 {
-    left:72%;
-}
-
-.column-1-and-3 {
-    left:97%;
-}
 
 .blog-post{
     margin-bottom: 30px;
@@ -240,12 +205,6 @@ p .pretty-code-sample {
 
 .sidebar{
     font-size:14px;
-    /*text-align:justify;
-    margin-top:21px;
-    padding: 5px;
-
-    width:30%;
-    background-color: #6d695c;*/
 }
 
 .blogs {
