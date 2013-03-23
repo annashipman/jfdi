@@ -51,8 +51,13 @@ img {
     width:100%;
 }
 
-
 .header {
+    background-color: #bbb;
+    padding: 50px;
+
+}
+
+.header_argyle {
 background-color: #6d695c;
 /*Argyle. Author: Anna Kassner via leaverou.me*/
 background-image:
