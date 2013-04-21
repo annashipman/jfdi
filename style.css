@@ -54,8 +54,12 @@ img {
     width:100%;
 }
 
-
 .header {
+    background-image:url('/img/texture.jpg');
+    text-shadow: 0px 2px 5px black;
+}
+
+.header-argyle {
 background-color: #6d695c;
 /*Argyle. Author: Anna Kassner via leaverou.me*/
 background-image:
@@ -99,6 +103,11 @@ h1, h2 {
     margin-left: 20px;
 }
 
+/*change to class*/
+#navigation {
+    padding: 20px 0 25px 30px;
+}
+
 .twitter{
     float:right;
     padding-top:20px;
@@ -107,12 +116,11 @@ h1, h2 {
 }
 
 .name {
-    padding: 20px 0 0 20px;
+    padding: 50px 0 0 50px;
     font-family: "Gill Sans", Calibri, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 32px;
     font-weight: normal;
     letter-spacing: 6px;
-    text-shadow: 0px 2px 5px black;
     text-transform: uppercase;
     color: white;
     display:block;
