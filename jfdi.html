@@ -29,20 +29,22 @@
 <div id="upgrading" class="blog-post">
     <h1>Upgrading to 12.04...</h1>
 <date>14th April 2013</date>
-<p>I needed to write some code. Thanks to <a href="http://georgebrock.com/images/thumbsup.gif" target="_blank">George Brocklehurst</a>, I was no longer content to do this on my personal laptop using Gedit - I required Vim.</p>
+<p>I needed to write some code. Thanks to <a href="http://georgebrock.com/images/thumbsup.gif" target="_blank">George Brocklehurst</a>, I was no longer content to do this on my personal laptop using gedit - I required Vim.</p>
 <p>But I could not upgrade Vim!</p>
-<div class="code-sample"><p>anna@ubuntu-mookie:~$ sudo apt-get vim</p>
-<p>...</p>
-Failed to fetch http://gb.archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.2.330-1ubuntu4_amd64.deb  404  Not Found [IP: 91.189.92.201 80]
-E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-<p>...etc</p>
-</p></div>
+<div class="code-sample">
+anna@ubuntu-mookie:~$ sudo apt-get vim<br />
+...<br />
+Failed to fetch http://gb.archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_7.2.330-1ubuntu4_amd64.deb  404  Not Found [IP: 91.189.92.201 80]<br />
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?<br />
+...etc<br p>
+</div>
 <p>OK, maybe it was unrelated, but it was time to face the inevitable. I was on Ubuntu 10.10. I needed to upgrade. <a href="#hard-earned-learnings">Skip to what I learned from this sorry saga.</a></p>
 <p>Great, so all I needed to do was click the update to next package button, right?</p>
-<div class="code-sample"><p>Error during update</p>
-A problem occurred during the update. This is usually some sort of network problem, please check your network connection and retry.</p>
-<p>, W:Failed to fetch http://extras.ubuntu.com/ubuntu/dists/natty/main/binary-i386/Packages.gz  404  Not Found</p>
-<p>, E:Some index files failed to download, they have been ignored, or old ones used instead.</p></div>
+<div class="code-sample">Error during update<br />
+A problem occurred during the update. This is usually some sort of network problem, please check your network connection and retry.<br />
+, W:Failed to fetch http://extras.ubuntu.com/ubuntu/dists/natty/main/binary-i386/Packages.gz  404  Not Found<br />
+, E:Some index files failed to download, they have been ignored, or old ones used instead.<br /></div>
+put something in here about what's gone wrong http://askubuntu.com/questions/226906/how-to-upgrade-ubuntu-unsupported-10-10-to-11-04-then-ultimately-to-12-10 and maybe cut error message
 <p>Right, so I can't go to 11.04. But actually, I don't want 11.04, I want 12.04. So can I not just go directly there?</p>
 <p>Well, no, as it turns out. Or maybe you can. I still don't know. But threads like <a href="http://askubuntu.com/questions/34430/can-i-skip-over-releases-when-upgrading" target="_blank">this</a> suggested that I couldn't go directly to 12.04 without doing a fresh intall and losing my files. I didn't fancy that, so I thought I'd go the long way round.</p> 
 <p>So I'm out of time to automatically upgrade. <a href="http://askubuntu.com/questions/226906/how-to-upgrade-ubuntu-unsupported-10-10-to-11-04-then-ultimately-to-12-10" target="_blank">It seems</a> I need to download the 11.04 iso, which I can do <a href="http://old-releases.ubuntu.com/releases/natty/" target="_blank">here</a>.</p>
@@ -71,7 +73,7 @@ x86_64<br /></div>
 <ul><li>How to check your system is <a href="#64">64-bit</a>.</li>
 <li>How to embed tweets into blog posts (click the 'More' button to the right of the 'Favourite' button and all will be revealed).</li>
 <li>Not to put off the upgrade until such time that it's no longer supported and you have to go through all this!</li>
-<li>ALWAYS be backing up your files. As Jeff Atwood said, "until you have a backup strategy of some kind, <a href="http://www.codinghorror.com/blog/2009/12/international-backup-awareness-day.html" target="_blank">you're srewed,</a> you just don't know it yet. This could've been much worse for me.</li></ul>
+<li>ALWAYS be backing up your files. As Jeff Atwood said, "until you have a backup strategy of some kind, <a href="http://www.codinghorror.com/blog/2009/12/international-backup-awareness-day.html" target="_blank">you're screwed,</a> you just don't know it yet. This could've been much worse for me.</li></ul>
 <p>Happy <a href="http://i.imgur.com/VhlQK.gif" target="_blank">programming</a>!</p>
 </div>
 <div id="roof-hacking" class="blog-post">
