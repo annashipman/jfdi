@@ -128,6 +128,20 @@ p .pretty-code-sample {
     padding:2px;
 }
 
+.blog-post{
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #333;
+}
+
+.sidebar{
+    font-size:14px;
+}
+
+.blogs {
+    width: 68%;
+    padding-right:10px;
+}
+
 .left-2-column {
     float:left;
     width: 45%;
@@ -186,19 +200,4 @@ p .pretty-code-sample {
     width:21%;            /* Width of right column content (column width minus padding on either side) */
     left:85%;            /* Please make note of the brackets here:
                     (100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
-}
-
-
-.blog-post{
-    margin-bottom: 30px;
-    border-bottom: 1px dotted #333;
-}
-
-.sidebar{
-    font-size:14px;
-}
-
-.blogs {
-    width: 68%;
-    padding-right:10px;
 }
