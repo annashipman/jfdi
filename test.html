@@ -1,0 +1,153 @@
+<!doctype html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en-GB">
+    <head>
+        <title>Anna Shipman : JFDI</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- Anything good about the styling of this website is down to the amazing Chris Govias; you should hire him: http://work.chrisgovias.com/ Anything bad or stupid is down to me. Do let me know if you spot anything. -->
+    </head>
+    <body>
+        <div class="header">
+            <span class="name"><a href="/">Anna Shipman</a> : JFDI</span>
+            <div class="navigation">
+                <a href="http://www.twitter.com/annashipman" class="header-text twitter">Follow me on Twitter</a>
+                <table class="link-group">
+                    <tr>
+                        <td><a href="jfdi.html" class="header-text">JFDI</a></td>
+                        <td><a href="cv.html" class="header-text">CV</a></td>
+                        <td><a href="games.html" class="header-text">Games</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+<div class="colmask threecol">
+    <div class="colmid">
+        <div class="colleft">
+            <div class="col1">
+                <!-- Column 1 start -->
+<div id="puppet-git" class="blog-post">
+<h1>Generating Puppet modules</h1>
+<date>date</date>
+<p>I learnt three very interesting things today, courtesy of the brilliant <a
+href="https://twitter.com/dancarley" target="_blank">Dan Carley</a>.<p>
+<ol>
+<li><a href="#git-filter-branch">git filter-branch</a></li>
+<li><a href="#generate-module">how to create a puppet module using our puppet module skeleton</a></li>
+<li><a href="#shopt">shopts -s dotglob</a></li>
+</ol>
+<p>We wanted to pull a module out of our GOV.UK Puppet because we needed the
+same thing for a new type of machine, for the <a
+href="https://github.com/alphagov/govuk_mirror-puppet" target="_blank">GOV.UK
+mirror</a>.</p>
+<p>The first step in creating a new module is to pull it out into its own git
+repository.<p>
+<p>First, clone the repository the module is currently in. (Extra learning here:
+you don't need to clone it from Github, you can just git clone the existing
+repository.) You want --no-hardlinks so it's entirely separate:</p>
+<div class="code-sample">
+git clone --no-hardlinks puppet puppet-auditd
+</div>
+<p>At this stage our puppet-auditd repo still points at our puppet repo, so we
+want to remove the remote:</p>
+<div class="code-sample">
+git remote rm origin
+</div>
+<p>Now we want to get rid of everything that's not our module and make our module
+the root, and <span id="git-filter-branch">this</span> is where we use git
+filter-branch:</p>
+<div class="code-sample">
+git filter-branch --subdirectory-filter modules/audit-d HEAD
+</div>
+<p>The instructions are <a
+href="http://teach.github.com/articles/lesson-filter-branch/"
+target="_blank">here</a> and we do actually want the first example - we want the
+sub-directory to become the root.</p>
+<p>The next thing we want to do is create the files in the framework around it
+to make it a Puppet module, e.g. the Modulefile. For this we can use our <a
+href="https://github.com/gds-operations/puppet-module-skeleton"
+target="_blank">Puppet module skeleton</a>. However, we don't want
+to directly follow the instructions there as we already have a lot of the
+classes we need. Instead of creating it from scratch as per those instructions,
+we <span id="generate-module">generate our new module stucture</span>:<p>
+<div class="code-sample">
+puppet module generate gdsoperations-auditd
+</div>
+<p>and then then we copy over the generated files.</p>
+<p>However, a normal recursive copy won't work:<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>This will only copy non-dotfiles, and we want the dotfiles as well, e.g.
+.gitignore.</p>
+<p>However, attempting to copy the dotfiles as well</p>
+<div class="code-sample">
+cp -r A/.* B
+</div>
+<p>leads to hilarious results.  <span class="code-sample">..</span> is a
+directory too, so the above command copies all those contents recursively as
+well... including the <span class="code-sample">..</span>. This is not *really*
+what we want.<p>
+<div id="shopt" class="code-sample">
+shopt -s dotglob
+</div>
+<p>In order to check what it's going to copy you can<p>
+<div class="code-sample">
+echo A/*
+</div>
+<p>and if you like it<p>
+<div class="code-sample">
+cp -r A/* B
+</div>
+<p>The next step is to go through the files to work out which modifications to
+keep and which ones are not relevant (another tip from Dan - vimdiff is really
+useful for this task) but that's <a
+href="https://github.com/gds-operations/puppet-auditd/compare/c140536...cad9a94"
+target="_blank">another story</a>.</p>
+</div>
+                <!-- Column 1 end -->
+            </div>
+            <div class="col2">
+                <!-- Column 2 start -->
+                <div class="sidebar">
+<ul>
+<li><a href="#where-start">Where Do I Start?</a> <date>6th July 2013</date></li>
+<li><a href="#roof-bug-fixing">Roof Bug-fixing</a> <date>21st May 2013</date></li>
+<li><a href="#upgrading">Ugrading to 12.04...</a> <date>6th May 2013</date></li>
+<li><a href="#roof-hacking">Roof Hacking</a> <date>24th March 2013</date></li>
+<li><a href="#estimating">How to Estimate</a> <date>21st January 2013</date></li>
+<li><a href="#learning-perl">Learning the perls</a> <date>20th November 2012</date></li>
+<li><a href="#d3">Learning More About D3</a> <date>19th July 2012</date></li>
+<li><a href="#cap-or-pacelc">CAP again – or should that be PACELC?</a> <date>15th July 2012</date></li>
+<li><a href="#cap-theorem-and-mongodb">The CAP Theorem and MongoDB</a> <date>29th April 2012</date></li>
+<li><a href="#questions-for-data">What Should Your Work Log Tell You?</a> <date>15th April 2012</date></li>
+<li><a href="#personal-development-1">P.O.A.</a> <date>20th February 2012</date></li>
+<li><a href="#gamejam-knowledge">Would Have Been Useful to Know at My First Game Jam</a> <date>14th February 2012</date></li>
+<li><a href="#jstalk-structure">JavaScript Talk Takes Shape</a> <date>21st January 2012</date> </li>
+<li><a href="#chat-with-ian">Preparation Begins for the JavaScript Talk...</a> <date>18th December 2011</date> </li>
+<li><a href="#js-talk">JavaScript Visualisations Proposal</a> <date>30th November 2011</date></li>
+<li><a href="#continuing-struggles">My Continuing Struggles with Linux</a> <date>17th October 2011</date></li>
+<li><a href="#sorl-bites-me">Sorl-thumbnail Comes Back to Bite Me</a> <date>12th September 2011</date></li>
+<li><a href="#evaluation-of-css">How to Write Efficient CSS – Evaluation of CSS</a> <date>29th August 2011</date></li>
+<li><a href="#basic-css">How to Write Efficient CSS – Basic CSS</a> <date>6th August 2011</date></li>
+<li><a href="#firefox-part-2">A Voyage of Discovery – Upgrading Firefox Part 2</a> <date>27th July 2011</date></li>
+<li><a href="#firefox-part-1">Upgrading Firefox – part 1...</a> <date>20th July 2011</date></li>
+<li><a href="#learned-today">What I have learned about folder structure today</a> <date>22nd April 2011</date></li>
+</ul>
+</div>
+                <!-- Column 2 end -->
+            </div>
+            <div class="col3">
+                <!-- Column 3 start -->
+                <!-- Column 3 end -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <p>This page uses the <a href="http://matthewjamestaylor.com/blog/perfect-3-column.htm" target="_blank">Perfect 'Holy Grail' 3 Column Liquid Layout</a> by <a href="http://matthewjamestaylor.com" target="_blank">Matthew James Taylor</a>.</p>
+</div>
+
+</body>
+</html>
