@@ -35,7 +35,7 @@ href="https://twitter.com/dancarley" target="_blank">Dan Carley</a>.<p>
 <ol>
 <li><a href="#git-filter-branch">git filter-branch</a></li>
 <li><a href="#generate-module">how to create a puppet module using our puppet module skeleton</a></li>
-<li><a href="#shopt">shopts -s dotglob</a></li>
+<li><a href="#shopt">shopt -s dotglob</a></li>
 </ol>
 <p>We wanted to pull a module out of our GOV.UK Puppet because we needed the
 same thing for a new type of machine, for the <a
@@ -62,7 +62,7 @@ git filter-branch --subdirectory-filter modules/audit-d HEAD
 </div>
 <p>The instructions are <a
 href="http://teach.github.com/articles/lesson-filter-branch/"
-target="_blank">here</a> and we do actually want the first example - we want the
+target="_blank">here</a> and we do actually want the first example – we want the
 sub-directory to become the root.</p>
 <p>The next thing we want to do is create the files in the framework around it
 to make it a Puppet module, e.g. the Modulefile. For this we can use our <a
