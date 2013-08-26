@@ -81,7 +81,7 @@ cp -r A/* B
 </div>
 <p>This will only copy non-dotfiles, and we want the dotfiles as well, e.g.
 .gitignore.</p>
-<p>However, attempting to copy the dotfiles as well</p>
+<p>However, attempting to copy the dotfiles as well:</p>
 <div class="code-sample">
 cp -r A/.* B
 </div>
@@ -92,7 +92,7 @@ what we want.<p>
 <div id="shopt" class="code-sample">
 shopt -s dotglob
 </div>
-<p>In order to check what it's going to copy you can<p>
+<p>In order to check what it's going to copy you can:<p>
 <div class="code-sample">
 echo A/*
 </div>
@@ -101,10 +101,12 @@ echo A/*
 cp -r A/* B
 </div>
 <p>The next step is to go through the files to work out which modifications to
-keep and which ones are not relevant (another tip from Dan - vimdiff is really
-useful for this task) but that's <a
+keep and which ones are not relevant.</p>
+<img src="img/files_changed.png">
+<p>Another tip from Dan: vimdiff is really useful for this task. You can see
+what we decided, <a
 href="https://github.com/gds-operations/puppet-auditd/compare/c140536...cad9a94"
-target="_blank">another story</a>.</p>
+target="_blank">here</a>.</p>
 </div>
                 <!-- Column 1 end -->
             </div>
