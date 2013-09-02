@@ -175,9 +175,12 @@ them 32GB but this wasn't enough. So here's how to do it:</p>
 <li>Add the extra disk through our virtualisation platform's control panel.</li>
 <li>Reboot the box so that it sees the new disk.</li>
 <li>Partition the new disk. There are many ways to partition a disk - we used <a
-href="http://en.wikipedia.org/wiki/Cfdisk" target="_blank">cfdisk</a>, which has a GUI. For
-this, we accepted all the defaults and then wrote it. We possibly could have
-considered making the type Linux LVM as this would have meant we could extend it
+href="http://en.wikipedia.org/wiki/Cfdisk" target="_blank">cfdisk</a>, which has a GUI. 
+<div class="code-sample">cfdisk /dev/sdb</div>
+This opens the GUI and then you tab through it to select options. We just
+accepted all the defaults, so the only time we had to change it was at the end,
+to select [write].
+We did consider making the type Linux LVM as this would have meant we could extend it
 later, but in this case we just accepted the default type of Linux.<br />
 This means that as well as /dev/sdb we have /dev/sdb1. (Extra learning points
 here - disks are added alphabetically. So the existing disk was sda. If,
