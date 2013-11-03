@@ -1,6 +1,8 @@
-<div id="cap-or-pacelc" class="blog-post">
-<h1>CAP again – or should that be PACELC?</h1>
-<date>15th July 2012</date>
+---
+anchor_id: cap-or-pacelc
+title: CAP again – or should that be PACELC?
+layout: blog_post
+---
 <p>The last thing I wrote about was the CAP Theorem. Last week, <a href="https://twitter.com/thattommyhall" target="_blank">Tom Hall</a> visited our office and gave a very interesting talk, the central thesis of which was that the CAP Theorem, as often explained, is incorrect – or at least not very meaningful.</p>
 <p>The first point, explained very clearly in <a href="http://www.cloudera.com/blog/2010/04/cap-confusion-problems-with-partition-tolerance/" target="_blank">CAP Confusion: Problems with 'partition tolerance'</a> is that P, "Partition Tolerance", as per the <a href="http://lpd.epfl.ch/sgilbert/pubs/BrewersConjecture-SigAct.pdf"target="_blank">proof</a> of the CAP Theorem, is not a property of your application; rather it is a property of the network it's on. The network may partition. To quote from Henry Robinson's Cloudera article:</p>
 
@@ -15,4 +17,3 @@
 <p>He suggests CAP should be rewritten as PACELC:</p> <p class="pretty-code-sample">"If there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency (C)?"</p>
 
 <p>Tom's talk covered many other interesting topics and is worth catching if you can. One of the other many interesting things Tom talked about was Vector Clocks. I won't go into that here, but they are worth reading up on! <a href="http://basho.com/blog/technical/2010/01/29/why-vector-clocks-are-easy/"target="_blank">Here</a> is a potential place to start...</p>
-</div>

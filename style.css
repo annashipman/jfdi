@@ -16,7 +16,7 @@ p {
     font-size: 12px;
 }
 
-ul  {
+ul {
     font-size: 14px;
     line-height: 1.7;
     margin-left: 10px;
@@ -41,6 +41,9 @@ a {
     color: white;
 }
 
+h1 a {
+    color: black;
+}
 a:hover, a:focus{
     text-decoration: underline;
 }
