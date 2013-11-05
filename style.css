@@ -136,10 +136,6 @@ p .pretty-code-sample {
     border-bottom: 1px dotted #333;
 }
 
-.sidebar{
-    font-size:14px;
-}
-
 .left-2-column {
     float:left;
     width: 45%;
@@ -148,6 +144,10 @@ p .pretty-code-sample {
 .right-2-column {
     float:right;
     width:50%;
+}
+
+.message-container {
+    margin: 50px;
 }
 
 /* lifted directly from http://matthewjamestaylor.com/blog/perfect-3-column.htm*/
